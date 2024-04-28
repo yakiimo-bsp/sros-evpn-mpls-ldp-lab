@@ -1,8 +1,8 @@
-# Nokia SR OS EVPN-MPLS Lab
+# Nokia SR OS EVPN over MPLS Lab
 
 | Items | Description |
 | --- | --- |
-| Description | A lab to demonstrate EVPN-MPLS on Nokia SR OS with containerlab |
+| Description | A lab to demonstrate EVPN over MPLS on Nokia SR OS with containerlab |
 | Components | Nokia SR OS, Multitool Alpine Linux |
 | Resource requirements | N/A |
 | Topology file | sros-ev-mpls.clab.yml |
@@ -18,7 +18,7 @@ CE1 and CE2 are assigned to VLAN 10, CE3 and CE4 are assigned to VLAN 20, and th
 
 - Topology: Clos
 - Underlay: iBGP with OSPF
-- Overlay: EVPN-MPLS
+- Overlay: EVPN over MPLS
 - BUM: Ingress Replication
 - Others: BFD, ECMP
 - Client: VLAN10, VLAN20
@@ -26,8 +26,21 @@ CE1 and CE2 are assigned to VLAN 10, CE3 and CE4 are assigned to VLAN 20, and th
 ![Topology](images/topology.png)
 
 # Use cases
-This lab allows you to launch a basic interoperability scenario for a multi-tenant environment on EVPN-MPLS using the Nokia SR OS.
+This lab allows you to launch a basic interoperability scenario for a multi-tenant environment on EVPN over MPLS using the Nokia SR OS.
 The lab directory contains the basic configuration files used to start the interoperability demonstration.
+
+# Parameters
+| Role | Hostname | IP address | VLAN |
+| --- | --- | --- | --- |
+| Spine | P1 | 10.0.0.1 | |
+| Spine | P2 | 10.0.0.2 | |
+| Leaf | PE1 | 10.0.0.11 | |
+| Leaf | PE2 | 10.0.0.12 | |
+| Leaf | PE3 | 10.0.0.13 | |
+| Client | CE1 | 192.168.10.1 | 10 |
+| Client | CE2 | 192.168.10.2 | 10 |
+| Client | CE3 | 192.168.20.3 | 20 |
+| Client | CE4 | 192.168.20.4 | 20 |
 
 # Outputs
 ```
