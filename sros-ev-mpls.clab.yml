@@ -9,7 +9,7 @@ topology:
   kinds:
     vr-sros:
       image: ${IMAGE_REPO}vrnetlab/vr-sros:23.10.R1
-      license: vr-sros-license.lic # Not included in the lab, ask your Nokia representative
+      license: license.txt # Not included in the lab, ask your Nokia representative
     linux:
       image: ghcr.io/hellt/network-multitool
 
