@@ -1,4 +1,4 @@
-name: sros-ev-mpls
+name: sros-evpn-mpls-ldp
 prefix: ""
 
 topology:

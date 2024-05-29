@@ -17,7 +17,7 @@ CE1 and CE2 are assigned to VLAN 10, CE3 and CE4 are assigned to VLAN 20, and th
 
 - Topology: Clos
 - Underlay: iBGP with OSPF
-- Overlay: EVPN over MPLS
+- Overlay: EVPN over MPLS with LDP
 - BUM: Ingress Replication
 - Others: BFD, ECMP
 - Client: VLAN10, VLAN20
